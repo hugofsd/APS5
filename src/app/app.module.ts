@@ -20,7 +20,7 @@ import {GMapModule} from 'primeng/gmap';
 import {BreadcrumbModule} from 'primeng/breadcrumb';
 import {ButtonModule} from 'primeng/button';
 import {MenubarModule} from 'primeng/menubar';
-
+import { AngularFirestore } from '@angular/fire/firestore';
 
 
 
@@ -44,7 +44,8 @@ import {MenubarModule} from 'primeng/menubar';
     GMapModule,
     BreadcrumbModule,
     ButtonModule,
-    MenubarModule
+    MenubarModule,
+    AngularFirestore
 
 
 

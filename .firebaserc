@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "detector-de--humidade": {
+      "hosting": {
+        "apsunip": [
+          "detector-de--humidade"
+        ]
+      }
+    }
+  }
+}

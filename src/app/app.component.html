@@ -4,22 +4,38 @@
 <!----------------------------- Informações -------------------------------->
 <p-accordion>
   <p-accordionTab header="Objetivo">
-     Content 1
+    <p>
+      O trabalho teve como motivação apresentar uma solução para prevenir rompimentos <br>
+       de barragens, para assim evitar desastres, como aconteceu em Brumadinho-MG.<br>
+Para tanto utilizamos um Arduino, com sensor de umidade, para que ele pudesse<br>
+ detectá-la nas barragens, e quando um nível alto fosse atingido, enviaria<br>
+  um alerta. Além disso, uma interface HTML foi<br>
+   criada para o controle dos dados obtidos.<br>
+    </p>
   </p-accordionTab>
-  <p-accordionTab header="Como funciona">
-    Content 2   
-</p-accordionTab>
   <p-accordionTab header="Benefícios">
-      Content 3 
+    <p>• Monitoramento por região <br>
+    • Levantamento semanal <br>
+    • Baixo custo sistemico <br>
+  </p>
   </p-accordionTab>
-  <p-accordionTab header="Sensores">
-      Content 4    
+  <p-accordionTab header="Estrutura do projeto">
+   <p>• Arduino com Cabo USB <br>
+    • Senso de Umidade do Solo <br>
+    • Cabos Jumper Marcho-Fêmea <br>
+    • Cabos Jumper Fêmea-Fêmea <br>
+    • Cabo jumper macho-fêmea da porta A0(Sensor) para porta A0(Arduino)<br>
+    • Cabo jumper macho-fêmea da porta GND(Sensor) para porta GND(Arduino)<br>
+    • Cabo jumper macho-fêmea da porta VCC(Sensor) para porta 5V(Arduino)<br>
+    • Cabo jumper fêmea-fêmea da porta +(Sensor) para Higrômetro<br>
+    • Cabo jumper fêmea-fêmea da porta –(Sensor) para Higrômetro<br>
+  </p>
   </p-accordionTab>
 </p-accordion>
 <!----------------------------- Informações -------------------------------->
 <h2>DADOS POR REGIÃO:</h2>
-
-<button  pButton type="button" class="ui-button-rounded" (click)="informacaoGraficotwo()" pButton icon="pi pi-info-circle"></button>
+<button  pButton type="button" class="ui-button-rounded" (click)="informacaoGraficotwo()"
+ pButton icon="pi pi-info-circle"></button>
 <p-dialog header="Informações" [(visible)]="displaytwo">
   <p id="pDetalhamento">A radar é responsavel por monitorar a média de umidade<br>
   detectada no solo por sensores posicionados em pontos estratégiacos:</p> <br>
@@ -32,11 +48,8 @@
   </strong>
     </ul>
   <br>
-<p> O levantamento faz um comparativo entre a semana atual e anterior.</p>
-
-  
+<p> O levantamento faz um comparativo entre a semana atual e anterior.</p>  
 </p-dialog>
-
 <p-chart type="radar"  whidth="250px" height="400px" [data]="graficotwo"></p-chart>
  
     
@@ -49,9 +62,9 @@ detectada pelos sensores nas duas ultimas semanas.<br>
 </p-dialog>
 <button  pButton type="button" class="ui-button-rounded" (click)="informacaoGrafico()" pButton icon="pi pi-info-circle"></button>
 
-<p-card style="height: 300px; width: 212px;"  id="cardDoGrafico1">
-  
-  <p-chart whidth="150px" height="350px"  style="height: 300px; width: 212px;" type="bar" id="grafico1" [data]="graficoone"></p-chart>
+<p-card style="height: 300px; width: 212px;"  id="cardDoGrafico1">  
+  <p-chart whidth="150px" height="350px"  style="height: 300px; width: 212px;"
+   type="bar" id="grafico1" [data]="graficoone"></p-chart>
 </p-card>
 <!----------------------------   Grafico   -------------------------------->
 
