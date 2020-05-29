@@ -122,10 +122,6 @@
               "devServerTarget": "apsunip:serve:production"
             }
           }
-        },
-        "deploy": {
-          "builder": "@angular/fire:deploy",
-          "options": {}
         }
       }
     }
