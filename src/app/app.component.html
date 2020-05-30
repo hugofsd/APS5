@@ -34,8 +34,9 @@ Para tanto utilizamos um Arduino, com sensor de umidade, para que ele pudesse<br
 </p-accordion>
 <!----------------------------- Informações -------------------------------->
 <h2>DADOS POR REGIÃO:</h2>
-<button  pButton type="button" class="ui-button-rounded" (click)="informacaoGraficotwo()"
- pButton icon="pi pi-info-circle"></button>
+<p style="color: aliceblue;">INFORMAÇÕES: <button  pButton type="button" class="ui-button-rounded" (click)="informacaoGraficotwo()"
+  pButton icon="pi pi-info-circle"></button> </p>
+
 <p-dialog header="Informações" [(visible)]="displaytwo">
   <p id="pDetalhamento">O radar é responsavel por monitorar a média de umidade<br>
   detectada no solo das barragens por sensores posicionados em pontos estratégicos:</p> <br>
@@ -60,7 +61,8 @@ Para tanto utilizamos um Arduino, com sensor de umidade, para que ele pudesse<br
 detectada pelos sensores nas duas ultimas semanas.<br>
 </p>
 </p-dialog>
-<button  pButton type="button" class="ui-button-rounded" (click)="informacaoGrafico()" pButton icon="pi pi-info-circle"></button>
+<p style="color: aliceblue;">INFORMAÇÕES: <button  pButton type="button" class="ui-button-rounded" (click)="informacaoGrafico()" pButton icon="pi pi-info-circle"></button></p>
+
 
 <p-card style="height: 300px; width: 212px;"  id="cardDoGrafico1">  
   <p-chart whidth="150px" height="350px"  style="height: 300px; width: 212px;"
