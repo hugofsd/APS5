@@ -73,7 +73,7 @@ export class AppComponent {
 
 ngOnInit() {
    this.items = [
-            {label: 'Link para o GitHub', icon: 'pi pi-fw pi-file', url: 'https://github.com/hugofsd/APS5'}
+            {label: 'Link para o código/ GitHub', icon: 'pi pi-fw pi-file', url: 'https://github.com/hugofsd/APS5'}
           ];
     }
 
